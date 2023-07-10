@@ -1,0 +1,24 @@
+.footer-main{
+    background-color: rgb(209, 59, 255);
+    padding: 0 4.5rem;
+    margin: 0%;
+}
+
+.footer-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-data{
+    padding: 0 3rem;
+}
+
+.footer-left{
+    justify-items: start;
+    display: flex;
+}
+
+.img-logo{
+    width: 45%;
+}
+
