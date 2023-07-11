@@ -10,7 +10,6 @@
 # production
 /build
 backend/src/public
-db-config.js
 # misc
 .DS_Store
 .env
@@ -22,6 +21,3 @@ db-config.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Local Netlify folder
-.netlify
