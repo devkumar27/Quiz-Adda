@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineFacebook } from 'react-icons/ai';
 import './Footer.css';
 import logoImg from '../assets/logo.png'
 
@@ -14,9 +14,9 @@ const Footer = () => {
         <div className='footer-rigth'>
             <p>Our Soical Links</p>
             <div className='footer-social-links'>
+                <AiOutlineLinkedin />
                 <AiOutlineInstagram />
-                <AiOutlineInstagram />
-                <AiOutlineInstagram />
+                <AiOutlineFacebook />
             </div>
         </div>
         </div>

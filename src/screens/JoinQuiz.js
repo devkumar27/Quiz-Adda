@@ -20,7 +20,7 @@ const JoinQuiz = () => {
 		<div id='join-quiz'>
 			<div id='join-quiz-div'>
 				<div id='logo-name'>
-					<b style={{ fontweight: 600 }}>Quiz</b>dom
+					<h1 id='heading'>Join Quiz</h1>
 				</div>
 				<input
 					value={code}
@@ -37,7 +37,7 @@ const JoinQuiz = () => {
 					Join Quiz
 				</button>
 				<button className='join-button' onClick={handleJoinBlindQuiz}>
-					Join As a Blind
+					Join Unnamed
 				</button>
 			</div>
 		</div>

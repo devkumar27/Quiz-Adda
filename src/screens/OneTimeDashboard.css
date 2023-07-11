@@ -3,23 +3,29 @@
 #dashboard-content {
 	height: 100vh;
 	width: 100%;
-	background-color: var(--gradient);
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	background-color: #e1ffff;
+	background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+	
 }
 .one-time-dashboard {
-	height: 100vh;
-	background-color: var(--secondary);
+	/* height: 100vh; */
 }
 .dash-btns {
-	flex: 1;
-	margin-left: 140px;
+	/* flex: 1; */
+	/* margin-left: 140px; */
+	width: 70%;
 	display: flex;
 	text-align: left;
 	flex-direction: column;
 	align-content: space-between;
-	align-items: stretch;
+	align-items: center;
+	background-color: rgb(209, 59, 255);
+	justify-content: center;
+	border-radius: 40px;
+	padding: 50px 0px;
 }
 @media (max-width: 500px) {
 	.dash-btns {
@@ -34,8 +40,19 @@
 	align-content: flex-end;
 }
 .one-time-button{
-	width: 230px;
-	padding: 15px;
+    padding: 9px 20px;
+    border: 1px solid #caffff;
+    background-color: #caffff;
+    color: rgb(209, 59, 255);
+    font-weight: bold;
+    font-size: 1.125rem;
+	margin: 10px;
+	width: 150px;
+
+}
+.one-time-button:hover{
+    background-color: #aafbfb;
+    cursor: pointer;
 }
 
 .wlcm-msg {

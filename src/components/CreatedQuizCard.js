@@ -19,7 +19,7 @@ const CreatedQuizCard = ({
 				<h1 id='created-quiz-title'>{title}</h1>
 				<p className='card-code'>Code: {code}</p>
 			</div>
-			<div id='horizontal-line'></div>
+			<div id='horizontal-line'>
 			<div id='row'>
 				<div id='responses'>
 					<Link to={`/responses/${code}`} style={{ fontWeight: 'bold' }}>
@@ -30,12 +30,18 @@ const CreatedQuizCard = ({
 			</div>
 			<div className='bottom-bar'>
 				{isOpen ? <div id='open'>open</div> : <div id='closed'>closed</div>}
-				<IconButton onClick={() => setEditQuiz([index])}>
-					<EditRounded />
-				</IconButton>
+				<div>
+					<button className='edit-btn' onClick={() => setEditQuiz([index])}>
+						Edit
+					</button>
+					<button className='del-btn' onClick={() => setEditQuiz([index])}>
+						Delete
+					</button>
+				</div>
+			</div>
 			</div>
 		</div>
 	)
 }
 
-export default CreatedQuizCard
+export default CreatedQuizCard;

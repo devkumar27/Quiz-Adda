@@ -13,7 +13,7 @@
 .nav-menu {
 	width: 250px;
 	height: 100vh;
-	background-color: var(--secondary);
+	background-color:rgb(209, 59, 255);
 	display: flex;
 	justify-content: center;
 	position: fixed;
@@ -69,15 +69,15 @@
 	border-radius: 4px;
 }
 .nav-text button:hover {
-	background-color: var(--accent-pink);
+	background-color: goldenrod;
 	cursor: pointer;
 }
 .nav-text a:hover {
-	background-color: var(--accent-pink);
+	background-color: goldenrod;
 }
 
 .navbar-toggle {
-	background-color: var(--secondary);
+	background-color:rgb(209, 59, 255);
 	margin: 7px 25px;
 	text-align: start;
 }

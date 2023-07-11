@@ -4,8 +4,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 80px;
+	margin-top: 0;
 }
+
+.dash-heading {
+	width: auto;
+}
+
 .heading {
 	margin: 10px;
 	display: flex;
@@ -27,7 +32,9 @@
 	margin: 10px;
 }
 .quizzes {
-	width: 90%;
+	padding: 70px 40px;
+	padding-bottom: 0;
+	width: 100%;
 	/* margin: 20px; */
 }
 .card-holder {

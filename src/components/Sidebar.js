@@ -8,9 +8,9 @@ import {
 	Dashboard,
 	ExitToApp,
 	MeetingRoom,
-	MenuOpenRounded,
 	MenuRounded,
 } from '@material-ui/icons'
+import {AiOutlineClose} from 'react-icons/ai';
 
 function Sidebar() {
 	const [signOut, setSignOut] = useState(false)
@@ -18,19 +18,19 @@ function Sidebar() {
 		{
 			title: 'Dashboard',
 			path: '/dashboard',
-			icon: <Dashboard />,
+			// icon: <Dashboard />,
 			CName: 'nav-text',
 		},
 		{
 			title: 'Join Quiz',
 			path: '/join-quiz',
-			icon: <MeetingRoom />,
+			// icon: <MeetingRoom />,
 			CName: 'nav-text',
 		},
 		{
 			title: 'Create Quiz',
 			path: '/create-quiz',
-			icon: <CreateNewFolder />,
+			// icon: <CreateNewFolder />,
 			CName: 'nav-text',
 		},
 	]
@@ -48,7 +48,7 @@ function Sidebar() {
 				<ul className='nav-menu-items' onClick={showSidebar}>
 					<li className='navbar-toggle'>
 						<Icon>
-							<MenuOpenRounded fontSize='large' />
+							<AiOutlineClose fontSize='large' />
 						</Icon>
 					</li>
 					{SidedbarData.map((item, index) => {

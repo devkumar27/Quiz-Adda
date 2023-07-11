@@ -79,7 +79,7 @@ const UserDashboard = ({ user }) => {
 			<div className='quizzes'>
 				<div className='heading'>
 					<div className='line-left' />
-					<h2>Created </h2>
+					<h2>Your Creations</h2>
 					<div className='line' />
 				</div>
 				<div className='card-holder'>
@@ -100,7 +100,7 @@ const UserDashboard = ({ user }) => {
 			<div className='quizzes'>
 				<div className='heading'>
 					<div className='line-left' />
-					<h2>Attempted </h2>
+					<h2>Attempted Quizzes</h2>
 					<div className='line' />
 				</div>
 				<div className='card-holder'>

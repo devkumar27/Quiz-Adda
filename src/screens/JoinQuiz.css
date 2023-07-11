@@ -1,16 +1,28 @@
 @import "../components/colors.css";
 
+#heading {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
 #join-quiz{
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* width: 70%; */
+  
 }
 #join-quiz-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 70px; */
-  padding: 100px;
-  padding-top: 150px;
+  position: absolute;
+  top: 150px;
+  width: 70%;
+  padding: 40px 0px;
+  background-color:rgb(209, 59, 255);
+  border-radius: 40px;
+
 }
 /* label{
   font-size: xx-large;
@@ -22,12 +34,12 @@
   padding: 10px;
   text-align: center;
   font-size: larger;
-  border-radius: 50px;
-  transition: width 0.8s ease-in-out;
+  border-radius: 10px;
+  /* transition: width 0.8s ease-in-out; */
   border: 2px solid #404A5E;
 }
 #q-code:focus{
-    width: 500px;
+    /* width: 500px; */
     outline: none;
     text-align: center;
     font-weight: 500;
@@ -35,38 +47,21 @@
     color: var(--secondary);
 }
 .join-button{
-  margin: 10px;
-  padding: 12px;
-  font-size: 20px;
-  width: 250px;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  border-radius: 50px;
-  border: none;
-  background-image: var(--gradient);
-  color:  var(--primary);
-  box-shadow: 0 0 20px #eee;
-}
+  padding: 9px 20px;
+  border: 1px solid #caffff;
+  background-color: #caffff;
+  color: rgb(209, 59, 255);
+  font-weight: bold;
+  font-size: 1.125rem;
+margin: 10px;
+width: 200px;
 
+}
 .join-button:hover{
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
+  background-color: #aafbfb;
   cursor: pointer;
-  text-decoration: none;
-  
-}
-.join-button:focus{
-  outline: none;
-}
-.join-button:active{
-  transform: translateY(4px);
 }
 @media (max-width: 768px) {
-  .join-button{
-    width: 200px;
-    padding: 10px;
-  }
   #q-code{
     width: 300px;
   }

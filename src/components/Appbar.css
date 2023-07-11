@@ -8,13 +8,14 @@
 	color: white;
 	padding: 0px 5px;
 	padding-right: 15px;
+  margin-bottom: 0;
 	justify-content: space-between;
-	background-color: var(--secondary);
+	background-color: rgb(209, 59, 255);
 	box-shadow: black 0px 1px 6px;
 }
 .slider {
   z-index: 9;
-  background-color: var(--secondary);
+  background-color: rgb(209, 59, 255);
   height: 70px;
   display: flex;
   justify-content: center;
@@ -34,7 +35,7 @@
   font-size: 30px;
 }
 .home:hover {
-  color: var(--accent-mustard);
+  color: #caffff;
 }
 .appbar-user {
 	display: flex;
