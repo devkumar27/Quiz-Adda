@@ -3,6 +3,9 @@ import './Home.css'
 import { StyledFirebaseAuth } from 'react-firebaseui'
 import firebase from '../firebase/firebase'
 import LoadingScreen from './LoadingScreen'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import banner from '../assets/banner1.png'
 
 const Home = ({ setUser }) => {
 	const [loading, setLoading] = useState(true)
@@ -42,7 +45,10 @@ const Home = ({ setUser }) => {
 			{loading ? (
 				<LoadingScreen />
 			) : (
-				<div id='Home'>
+				<div>
+				<Navbar />
+				<div id='Home-main'>
+				   <div className='Home'>
 					<div id='logo'>
 						<div id='logo-name'>
 							<b>Quiz-</b>ADDA
@@ -51,10 +57,14 @@ const Home = ({ setUser }) => {
 							Create a Quiz. Join a Quiz. Invite a Friend for a Quiz.
 						</div>
 					</div>
-
+					<div className='img-flex'>
+						<img src={banner} ></img>
+					</div>
+					</div>
+					<div className='img-class'>
 					<div id='login-card'>
 						<label className='login-label'>
-							<b>QA</b>
+							<b>Let's begin</b>
 						</label>
 						<StyledFirebaseAuth
 							borderRadius='40px'
@@ -62,6 +72,9 @@ const Home = ({ setUser }) => {
 							firebaseAuth={firebase.auth()}
 						/>
 					</div>
+					</div>
+				</div>
+				<Footer />
 				</div>
 			)}
 		</>
