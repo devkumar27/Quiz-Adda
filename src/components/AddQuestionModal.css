@@ -5,6 +5,7 @@
 	text-align: left;
 	font-size: 1.5rem;
 	font-weight: 700;
+	
 }
 .question:focus {
 	transition: all 0.5s ease;

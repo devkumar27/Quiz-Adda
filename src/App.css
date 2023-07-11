@@ -66,19 +66,18 @@ input[type='submit'],
 	margin: 10px;
 	padding: 15px;
 	font-size: 15px;
-	text-transform: uppercase;
-	transition: 0.5s;
+	font-weight: 400;
 	background-size: 200% auto;
-	border-radius: 50px;
+	border-radius: 5px;
 	border: none;
-	background-image: var(--gradient);
-	color: var(--primary);
+	background-color: #caffff;
+
 }
 
 input[type='submit'],
 .button:hover {
 	background-position: right center; /* change the direction of the change here */
-	color: #fff;
+	background-color: #aafbfb;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -86,11 +85,7 @@ input[type='submit'],
 .button:focus {
 	outline: none;
 }
-input[type='submit'],
-.button:active {
-	transform: translateY(4px);
-	box-shadow: var(--dark-shadow) 2px 2px 3px;
-}
+
 .button .outlined {
 	background-image: none;
 	border: 2px solid;
@@ -99,16 +94,19 @@ input[type='submit'],
 
 .questionCard {
 	padding: 20px;
-	box-shadow: var(--light-shadow) 1px 1px 1px 1px;
 	margin: 20px 0px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
+	color: white;
 	/* width:80%; */
+	background-color: rgb(209, 59, 255);
+
 }
+
+
 .attempQuestionCard {
 	padding: 20px;
-	box-shadow: var(--light-shadow) 1px 1px 1px 1px;
 	margin: 10px 0px;
 	border-radius: 10px;
 	display: flex;
