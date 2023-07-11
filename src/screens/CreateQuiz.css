@@ -21,14 +21,14 @@
 	box-shadow: var(--light-shadow) 1px 1px 2px 1px;
 	border-radius: 10px;
 	display: flex;
-	width: 90%;
+	width: 60%;
 	flex-direction: column;
 	background-color: rgb(209, 59, 255);
 
 }
 
 #quiz-title {
-	border: var(--secondary) 1px solid;
+	/* border: var(--secondary) 1px solid; */
 	margin: 10px;
 	padding: 10px;
 	font-size: 26px;
