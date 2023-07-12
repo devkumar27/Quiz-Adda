@@ -18,6 +18,6 @@ app.use('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/public/index.html'))
 })
 // Listening to APIs
-app.listen("https://quiz-adda-backend.vercel.app/", () =>
+app.listen("https://quizadda-b37.netlify.app/", () =>
 	console.log('Listening on Port 8000')
 )
