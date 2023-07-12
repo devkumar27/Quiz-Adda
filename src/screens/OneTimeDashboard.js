@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const OneTimeDashboard = ({ user }) => {
 	const [path, setPath] = useState('')
 	// Path Redirection
-	const onDashboard = () => setPath('/dashboard')
+	const onDashboard = () => setPath('https://quizadda-b37.netlify.app/dashboard')
 	const onCreateQuiz = () => setPath('/create-quiz')
 	const onJoinQuiz = () => setPath('/join-quiz')
 
