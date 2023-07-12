@@ -37,7 +37,7 @@ const UserDashboard = ({ user }) => {
 				questions,
 				isOpen,
 			})
-			const results = await fetch('/API/quizzes/edit', {
+			const results = await fetch('https://quizadda-backend.onrender.com/API/quizzes/edit', {
 				method: 'POST',
 				body: JSON.stringify({
 					quizId: createdQuizzes[editQuiz]._id,

@@ -15,7 +15,7 @@ const AttemptQuiz = ({ match }) => {
 	const uid = firebase.auth().currentUser.uid
 	useEffect(() => {
 		const fetchQuiz = async () => {
-			const res = await fetch('/API/quizzes/join', {
+			const res = await fetch('https://quizadda-backend.onrender.com/API/quizzes/join', {
 				method: 'POST',
 				body: JSON.stringify({ quizId: quizCode, uid }),
 				headers: {
@@ -61,7 +61,7 @@ const AttemptQuiz = ({ match }) => {
 	const submitQuiz = async () => {
 		// send attemped Questions to backend
 		try {
-			const res = await fetch('/API/quizzes/submit', {
+			const res = await fetch('https://quizadda-backend.onrender.com/API/quizzes/submit', {
 				method: 'POST',
 				body: JSON.stringify({
 					uid,

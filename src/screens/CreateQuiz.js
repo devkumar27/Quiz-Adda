@@ -47,7 +47,7 @@ const CreateQuiz = ({
 		console.log('Quiz Creation Starts...')
 		setLoading('start')
 		try {
-			const result = await fetch('/API/quizzes/create', {
+			const result = await fetch('https://quizadda-backend.onrender.com/API/quizzes/create', {
 				method: 'POST',
 				body: JSON.stringify({
 					title,

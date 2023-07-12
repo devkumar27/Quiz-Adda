@@ -11,7 +11,7 @@ const Responses = ({ match }) => {
 
 	useEffect(() => {
 		const getResponses = async () => {
-			const res = await fetch('/API/quizzes/responses', {
+			const res = await fetch('https://quizadda-backend.onrender.com/API/quizzes/responses', {
 				method: 'POST',
 				body: JSON.stringify({ quizCode: quizId, uid }),
 				headers: {
