@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const userRoute = require('./Routes/Users')
+const cors = require("cors");
 const quizzesRoute = require('./Routes/Quizzes')
 
 // Hosting Frontend
@@ -10,6 +11,7 @@ const quizzesRoute = require('./Routes/Quizzes')
 app.use(express.static(path.join(__dirname, '/public/')))
 
 // Middleware
+app.use(cors());
 app.use(express.json())
 app.use('/API/users', userRoute)
 app.use('/API/quizzes', quizzesRoute)
