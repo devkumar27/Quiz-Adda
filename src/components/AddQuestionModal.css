@@ -36,7 +36,7 @@
 }
 .add-btn {
 	text-align: center;
-	color: var(--light-shadow);
+	color: black;
 	border-radius: 20%;
 	margin: 5px;
 	border: none;
